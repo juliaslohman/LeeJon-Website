@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-color: #363738; 
+    background-color: #C9C7C7; 
     line-height: 75%;
     min-height: 100%;
     position: relative;
@@ -54,7 +54,7 @@ nav {
     position: -webkit-sticky;
     position: sticky;
     top: 50px;
-    box-shadow: 5px 5px #9F0A20;
+    box-shadow: 5px 5px #717271;
 }
 
 .navtitle {
@@ -132,7 +132,7 @@ h5 {
     position: relative;
     top: -335px;
     left: 350px;
-    box-shadow: 5px 5px #9F0A20;
+    box-shadow: 5px 5px #717271;
 }
 
 a.content {
@@ -179,7 +179,7 @@ iframe {
     font-family: 'Open Sans';
     font-size: 14px;
     color: #FFF;
-    background-color: #9F0A20;
+    background-color: #717271;
     text-align: center;
     width: 115px;
     height: 190px;
