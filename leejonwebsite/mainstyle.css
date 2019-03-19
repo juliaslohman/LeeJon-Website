@@ -99,7 +99,7 @@ html, body {
             color: white;
         }
 
-        nav li a .active {
+        .active {
             color: #FFF;
             background-color: #9F0A20;
         }
@@ -117,6 +117,7 @@ html, body {
             height: auto;
             min-height: auto;
             width: 100vw;
+            padding: 75px;
             position: relative;
             display: block;
             box-sizing: border-box;
@@ -158,6 +159,10 @@ html, body {
 
     /* homepage blocks */
 
+        .homepagecontent {
+            padding: 0px;
+        }
+
         .contentblock {
             box-sizing: border-box;
             height: 500px;
@@ -165,11 +170,23 @@ html, body {
             position: relative;
         }
 
+        #bb2016 {
+            width: 100vw;
+            height: 100%;
+            display: block;
+            position: relative;
+            margin: 0;
+        }
+
         .welcome {
             height: 100%;
             padding: 50px;
             margin: auto;
         }
+
+            .welcome h3 {
+                margin: auto;
+            }
 
         .mission {
             background-color: #C9C7C7
@@ -185,7 +202,7 @@ html, body {
         }
 
         .instructors {
-
+            background-color: #C9C7C7
         }
 
         .ranks {
@@ -193,21 +210,16 @@ html, body {
         }
 
         .classofferings {
-
+            background-color: #C9C7C7
         }
     
     /* homepage blocks */
 
-    /* content images */
+    /* content images (not homepage) */
 
         .contentimage {
             width: auto;
             height: auto;
-        }
-
-        #bb2016 {
-            display: block;
-            float: right;
         }
 
         #choibrothers {
@@ -223,7 +235,7 @@ html, body {
         }
 
         iframe {
-            width: 800px;
+            width: 100%;
             height: 500px;
             border-radius: 5px;
         }
@@ -232,14 +244,28 @@ html, body {
 
     /* tables */
 
+        .typicaltable {
+            font-family: 'Open Sans';
+            font-size: 12px;
+            color: #363738;
+            width: 100%;
+            height: auto;
+            border-collapse: collapse;
+        }
+
+        .scheduleblocks {
+            width: 100%;
+            height: auto;
+        }
+    
         #eachscheduleblock {
             font-family: 'Open Sans';
             font-size: 14px;
             color: #FFF;
             background-color: #717271;
             text-align: center;
-            width: 127px;
-            height: 190px;
+            width: 250px;
+            height: 100px;
             border-radius: 5px;
             padding: 25px;
             margin: 10px;
@@ -250,15 +276,6 @@ html, body {
             font-size: 18px;
             font-weight: 600;
             margin: 0px;
-        }
-
-        .typicaltable {
-            font-family: 'Open Sans';
-            font-size: 12px;
-            color: #363738;
-            width: 800px;
-            height: auto;
-            border-collapse: collapse;
         }
 
         .typicaltable th, .typicaltable td {
