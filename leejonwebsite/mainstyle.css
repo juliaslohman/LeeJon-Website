@@ -160,10 +160,14 @@ html, body {
 
         .contentblock {
             box-sizing: border-box;
-            height: 600px;
+            height: 700px;
             padding: 50px;
             display: block;
             position: relative;
+        }
+
+        .block-textwrap {
+            margin: auto;
         }
 
         .welcome {
@@ -171,7 +175,14 @@ html, body {
         }
 
         .mission {
+
         }
+
+            .mission .block-textwrap {
+                padding: 30px;
+                float: left;
+                margin: auto;
+            }
 
         .learn {
 
