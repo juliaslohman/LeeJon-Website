@@ -157,6 +157,7 @@ html, body {
 
         .homepagecontent {
             padding: 0px;
+            font-size: 26px;
         }
 
         .contentblock {
@@ -165,6 +166,22 @@ html, body {
             display: block;
             position: relative;
         }
+
+        .block-textwrap {
+            height: 400px;
+            width: 600px;
+            padding: 50px;
+            box-sizing: border-box;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+            .block-textwrap h3 {
+                color: #9F0A20;
+            }
 
         #bb2016 {
             width: 100vw;
@@ -181,7 +198,10 @@ html, body {
         }
 
         .mission {
-            background-color: #C9C7C7
+            background-color: #C9C7C7;
+            height: 100%;
+            padding: 50px;
+            margin: auto;
         }
 
             .mission .block-textwrap {
