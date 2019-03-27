@@ -172,11 +172,11 @@ html, body {
             width: 600px;
             padding: 50px;
             box-sizing: border-box;
-            margin: auto;
             position: absolute;
             top: 50%;
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
+            margin: auto;
         }
 
             .block-textwrap h3 {
