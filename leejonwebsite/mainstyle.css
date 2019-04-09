@@ -4,18 +4,24 @@ html, body {
     padding: 0;
     line-height: 75%;
     min-height: 100%;
+    /* colors */
+    --red: #9F0A20;
+    --darkened-red: #720818;
+    --light-gray: #C9C7C7;
+    --mid-gray: #717271;
+    --dark-gray: #363738;
 }
 
     /* main title bar */
     
         .maintitle {
             font-family: 'Roboto Slab', serif;
-            color: #363738;
-            background-color: #FFF;
+            color: var(--dark-gray);
+            background-color: white;
             width: (100vw - 80px);
             height: 125px;
             padding: 40px;
-            border-bottom: 10px solid #9F0A20;
+            border-bottom: 10px solid var(--red);
             display: block;
             position: relative;
             margin: 0;
@@ -29,7 +35,7 @@ html, body {
         h2 {
             font-size: 30px;
             font-weight: 300;
-            color: #9F0A20;
+            color: var(--red);
         }
 
     /* end main title bar */
@@ -41,7 +47,7 @@ html, body {
             font-size: 40px;
             font-weight: 400;
             line-height: 100%;
-            color: #363738;
+            color: var(--dark-gray);
             margin: 10px 0px;
         }
 
@@ -49,14 +55,14 @@ html, body {
             font-family: 'Roboto Slab', serif;
             font-size: 30px;
             font-weight: 400;
-            color: #363738;
+            color: var(--dark-gray);
         }
 
         h5 {
             font-family: 'Open Sans';
             font-size: 20px;
             font-weight: 700;
-            color: #363738;
+            color: var(--dark-gray);
         }
 
     /* end other titles */
@@ -68,8 +74,8 @@ html, body {
             font-size: 22px;
             font-weight: 300;
             text-decoration: none;
-            color:  #363738;
-            background-color: #717271;
+            color:  var(--dark-gray);
+            background-color: var(--mid-gray);
             width: 100vw;
             height: 50px;
             position: -webkit-sticky; /* Safari */
@@ -95,13 +101,13 @@ html, body {
         }
 
         nav li a:hover {
-            background-color:  #363738;
+            background-color:  var(--dark-gray);
             color: white;
         }
 
         .active {
-            color: #FFF;
-            background-color: #9F0A20;
+            color: white;
+            background-color: var(--red);
         }
 
     /* end nav */
@@ -111,9 +117,9 @@ html, body {
         .content {
             font-family: 'Open Sans';
             font-size: 18px;
-            color: #363738;
+            color: var(--dark-gray);
             line-height: 150%;
-            background-color: #FFF;
+            background-color: white;
             height: auto;
             min-height: auto;
             width: 100vw;
@@ -124,19 +130,19 @@ html, body {
         }
 
         a {
-            color: #9F0A20;
+            color: var(--red);
             text-decoration: none;
         }
 
         a:hover {
-            color: #717271;
+            color: var(--mid-gray);
         }
 
         .button {
             font-family: 'Open Sans';
             font-size: 18px;
-            color: #FFF;
-            background-color: #9F0A20;
+            color: white;
+            background-color: var(--red);
             width: 400px;
             height: auto;
             text-align: center;
@@ -147,8 +153,8 @@ html, body {
         }
 
         .button:hover {
-            color: #FFF;
-            background-color: #720818;
+            color: white;
+            background-color: var(--darkened-red);
         }
     
     /* end content generics */
@@ -180,7 +186,7 @@ html, body {
         }
 
             .block-textwrap h3 {
-                color: #9F0A20;
+                color: var(--red);
             }
 
         #bb2016 {
@@ -198,7 +204,7 @@ html, body {
         }
 
         .mission {
-            background-color: #C9C7C7;
+            background-color: var(--light-gray);
             height: 100%;
             padding: 50px;
             margin: auto;
@@ -214,7 +220,7 @@ html, body {
         }
 
         .instructors {
-            background-color: #C9C7C7
+            background-color: var(--light-gray)
         }
 
         .ranks {
@@ -222,7 +228,7 @@ html, body {
         }
 
         .classofferings {
-            background-color: #C9C7C7
+            background-color: var(--light-gray)
         }
     
     /* homepage blocks */
@@ -262,7 +268,7 @@ html, body {
         .typicaltable {
             font-family: 'Open Sans';
             font-size: 12px;
-            color: #363738;
+            color: var(--dark-gray);
             width: 100%;
             height: auto;
             border-collapse: collapse;
@@ -276,8 +282,8 @@ html, body {
         #eachscheduleblock {
             font-family: 'Open Sans';
             font-size: 14px;
-            color: #FFF;
-            background-color: #717271;
+            color: white;
+            background-color: var(--mid-gray);
             text-align: center;
             width: 250px;
             height: 100px;
@@ -294,13 +300,13 @@ html, body {
         }
 
         .typicaltable th, .typicaltable td {
-            border: 1px solid #717271;
+            border: 1px solid var(--mid-gray);
             padding: 10px;
             line-height: 1.5;
         }
 
         .typicaltable th {
-            color: #363738;
+            color: var(--dark-gray);
             font-size: 18px;
             font-weight: 400;
         }
@@ -324,11 +330,11 @@ html, body {
         footer {
             font-family: 'Open Sans';
             font-size: 12px;
-            color: #717271;
-            background-color: #FFF;
+            color: var(--mid-gray);
+            background-color: white;
             width: 100vw;
             height: 200px;
-            border-top: 5px solid #717271;
+            border-top: 5px solid var(--mid-gray);
             display: block;
             bottom: 0px;
         }
