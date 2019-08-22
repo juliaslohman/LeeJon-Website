@@ -98,6 +98,8 @@ html, body {
             padding: 19px;
             text-decoration: none;
             float: left;
+            -webkit-transition: all 0.5s linear;
+            transition: all 0.5s linear;
         }
 
         nav li a:hover {
