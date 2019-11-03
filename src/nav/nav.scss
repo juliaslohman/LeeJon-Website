@@ -1,0 +1,44 @@
+@import './../vars.scss';
+
+nav {
+    font-family: $primary-font-family, serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-decoration: none;
+    color:  $dark-gray;
+    background-color: $mid-gray;
+    width: 100vw;
+    height: 50px;
+    position: -webkit-sticky;  // Safari
+    position: sticky;
+    top: 0px;
+    display: block;
+    z-index: 1;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-right: 20px;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 19px;
+        text-decoration: none;
+        float: left;
+        -webkit-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+
+        :hover {
+            background-color:  $dark-gray;
+            color: white;
+        }
+    }
+
+    .active {
+        color: white;
+        background-color: $red;
+    }
+}
