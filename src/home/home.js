@@ -8,7 +8,7 @@ class HomePage extends React.Component {
 
 	render() {
 		return (
-			<div className="content homepage-content">
+			<div className="homepage-content">
 
                 <div className="content-block welcome">
                     <h3>Welcome to LeeJon Taekwondo!</h3>

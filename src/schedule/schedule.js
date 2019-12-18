@@ -7,7 +7,7 @@ class Schedule extends React.Component {
 
 	render() {
 		return (
-            <div  className="content schedule-content">
+            <div className="schedule">
                 <h3>Calendar + Schedule</h3>
                 <section className="schedule-blocks">
                     <table>

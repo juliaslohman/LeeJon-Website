@@ -1,32 +1,30 @@
 @import '../vars.scss';
 
 .homepage-content {
+    margin: 0px -80px;
     padding: 0px;
     font-size: 26px;
-}
 
-.content-block {
-    box-sizing: border-box;
-    height: 500px;
-    display: block;
-    position: relative;
-}
-
-.block-textwrap {
-    height: 400px;
-    width: 600px;
-    padding: 50px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin: auto;
-}
-
-    .block-textwrap h3 {
-        color: $red;
+    .content-block {
+        box-sizing: border-box;
+        height: 500px;
+        display: block;
+        position: relative;
+        margin-left: -10px;
     }
+
+    .block-textwrap {
+        height: 400px;
+        width: 600px;
+        padding: 50px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin: auto;
+    }
+}
 
 #bb2016 {
     width: 100vw;

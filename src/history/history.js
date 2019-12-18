@@ -7,7 +7,7 @@ class History extends React.Component {
 
 	render() {
 		return (
-            <div className="content history-content">
+            <div className="history-content">
 			    <h3>History</h3>
 
                     <h4>History of Taekwondo</h4>

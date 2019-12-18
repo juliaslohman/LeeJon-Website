@@ -8,7 +8,7 @@ class Contact extends React.Component {
 
 	render() {
 		return (
-            <div className="content contact-content">
+            <div className="contact-content">
                 <h3>Location + Contact</h3>
                 <p><b>PHONE: </b><a href="tel:408-281-5934">408-281-5934</a></p>
                 <p><b>EMAIL: </b><a href="mailto:master@leejon.com">master@leejon.com</a></p>

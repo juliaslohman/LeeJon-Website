@@ -9,7 +9,7 @@ class Ribbon extends React.Component {
 	render() {
 		return (
 			<div className="ribbon">
-                <a href="./../home/home">
+                <a href="/">
                     <h1>LeeJon Taekwondo</h1>
 				</a>
                 <h2>traditional martial arts in san jose</h2>

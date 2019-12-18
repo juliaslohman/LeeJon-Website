@@ -3,9 +3,11 @@
 html, body {
     height: 100%;
     min-height: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     line-height: 75%;
+    box-sizing: border-box;
 }
 
 /* secondary titles */
@@ -41,12 +43,12 @@ h5 {
     font-family: $body-font-family;
     font-size: 18px;
     color: $dark-gray;
-    line-height: 150%;
+    line-height: 220%;
     background-color: white;
     height: auto;
     min-height: auto;
     width: 100vw;
-    padding: 75px;
+    padding: 30px 90px 20px 90px;
     position: relative;
     display: block;
     box-sizing: border-box;
