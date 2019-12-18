@@ -7,7 +7,7 @@ class History extends React.Component {
 
 	render() {
 		return (
-            <div>
+            <div className="content history-content">
 			    <h3>History</h3>
 
                     <h4>History of Taekwondo</h4>
@@ -83,7 +83,7 @@ class History extends React.Component {
                             </p>
 
                     <h4>History of Choi's Taekwondo</h4>
-                        <img src="choibrothers.gif" alt="Dan and Hyun Choi" width="413" height="576" className="contentimage" id="choibrothers"/>
+                        <img src="choibrothers.gif" alt="Dan and Hyun Choi" width="413" height="576" className="content-image" id="choibrothers"/>
                         <p>
                             Choi's Taekwondo, our parent studio, has a long history and tradition.
                         </p>
@@ -118,7 +118,7 @@ class History extends React.Component {
                             Master Ortez founded LeeJon in 1990. LeeJon moved to its new location on Camino Verde Drive in 2016.
                         </p>
 
-                        <img src="../photos/leejoncalligraphy.jpg" alt="LeeJon in Korean Calligraphy" width="480" height="640" className="contentimage" id="leejoncalligraphy"/>
+                        <img src="../photos/leejoncalligraphy.jpg" alt="LeeJon in Korean Calligraphy" width="480" height="640" className="content-image" id="leejoncalligraphy"/>
             </div>
 		);
 	}

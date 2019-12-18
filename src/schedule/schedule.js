@@ -7,7 +7,7 @@ class Schedule extends React.Component {
 
 	render() {
 		return (
-            <div className="schedule">
+            <div  className="content schedule-content">
                 <h3>Calendar + Schedule</h3>
                 <section className="schedule-blocks">
                     <table>
@@ -51,7 +51,7 @@ class Schedule extends React.Component {
                 </section>
                 <br/>
                 <section className="calendar">
-                    <iframe src="https://calendar.google.com/calendar/embed?height=750&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=3k7ci0b2k512otrn00k6irqgtc%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FLos_Angeles" style="border-width:0" height="800" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="https://calendar.google.com/calendar/embed?height=750&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=3k7ci0b2k512otrn00k6irqgtc%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FLos_Angeles" height="800" frameborder="0" scrolling="no"></iframe>
                 </section>
             </div>
 		);

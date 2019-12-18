@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Router, Switch, Redirect} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Switch, Redirect} from 'react-router-dom';
 import './universalStyle.scss';
 import Ribbon from './ribbon/ribbon.js';
 import Nav from './nav/nav.js';
@@ -15,41 +15,31 @@ class App extends React.Component {
 		super(props);
 	}
 
-	createRoutes() {
-		return(
-			<Router>
-				<Switch>
-					// set home as default
-					<Redirect from="/" exact to="/home"/>
-					<Route path="/home">
-						<HomePage/>
-					</Route>
-					<Route exact path="/schedule">
-						<Schedule/>
-					</Route>
-					<Route exact path="/contact">
-						<Contact/>
-					</Route>
-					<Route exact path="/info">
-						<Info/>
-					</Route>
-					<Route exact path="/history">
-						<History/>
-					</Route>
-				</Switch>
-			</Router>
-		);
-	}
-
 	render() {
-		let routes = this.createRoutes();
-		
 		return (
 			<div>
         		<Ribbon/>
 				<Nav/>
 				<div className="content">
-					{routes}
+					<Router>
+						<Switch>
+							<Route exact path="/">
+								<HomePage/>
+							</Route>
+							<Route exact path="/schedule">
+								<Schedule/>
+							</Route>
+							<Route exact path="/contact">
+								<Contact/>
+							</Route>
+							<Route exact path="/info">
+								<Info/>
+							</Route>
+							<Route exact path="/history">
+								<History/>
+							</Route>
+						</Switch>
+					</Router>
 				</div>
 				<Footer/>
 			</div>

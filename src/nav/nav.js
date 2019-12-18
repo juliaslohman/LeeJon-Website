@@ -1,6 +1,7 @@
 import React from 'react';
 import './nav.scss';
-import {Link, Router} from "react-router-dom";
+import {Link, BrowserRouter as Router} from "react-router-dom";
+import App from '../App.js';
 
 class Nav extends React.Component {
 	constructor (props) {
@@ -10,15 +11,15 @@ class Nav extends React.Component {
 	render() {
 		return (
 			<nav>
-                <Router>
-                    <ul>
-                        <li><Link to="/home" activeClassName="active">home</Link></li>
-                        <li><Link to="/schedule" activeClassName="active">calendar + schedule</Link></li>
-                        <li><Link to="/contact" activeClassName="active">location + contact</Link></li>
-                        <li><Link to="/info" activeClassName="active">student information</Link></li>
-                        <li><Link to="/history" activeClassName="active">our history</Link></li>
-                    </ul>
-                </Router>
+                <ul>
+                    <Router>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/schedule">calendar + schedule</a></li>
+                        <li><a href="/contact">location + contact</a></li>
+                        <li><a href="/info">student information</a></li>
+                        <li><a href="/history">our history</a></li>
+                    </Router>
+                </ul>
             </nav>
 		);
 	}
