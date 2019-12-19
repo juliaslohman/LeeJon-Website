@@ -3,9 +3,9 @@
 nav {
     font-family: $primary-font-family, serif;
     font-size: 22px;
-    font-weight: 100;
+    font-weight: 200;
     text-decoration: none;
-    color:  $dark-gray;
+    color: $dark-gray;
     background-color: $mid-gray;
     width: 100vw;
     height: 50px;
@@ -22,7 +22,6 @@ nav {
     }
 
     li a {
-        display: block;
         color: white;
         text-align: center;
         padding: 19px;
@@ -30,11 +29,11 @@ nav {
         float: left;
         -webkit-transition: all 0.5s linear;
         transition: all 0.5s linear;
+    }
 
-        :hover {
-            background-color:  $dark-gray;
-            color: white;
-        }
+    li a:hover {
+        background-color:  $dark-gray;
+        color: white;
     }
 
     .active {

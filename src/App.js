@@ -16,6 +16,10 @@ class App extends React.Component {
 	}
 
 	render() {
+		const ADDRESS = "6135 Camino Verde Drive, San Jose, CA 95119";
+		const PHONE = "408-281-5934";
+		const EMAIL = "master@leejon.com";
+
 		return (
 			<div>
         		<Ribbon/>
@@ -41,7 +45,7 @@ class App extends React.Component {
 						</Switch>
 					</Router>
 				</div>
-				<Footer/>
+				<Footer address={ADDRESS} phone={PHONE} email={EMAIL}/>
 			</div>
 		);
 	}
