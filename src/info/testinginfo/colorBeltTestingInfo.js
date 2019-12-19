@@ -1,49 +1,18 @@
-<!doctype html>
+import React from 'react';
+import testingForm from "../docs/testform.doc";
 
-<html lang="en">
+class ColorBeltTestingInfo extends React.Component {
+	constructor (props) {
+		super(props);
+	}
 
-    <head>
-
-        <title>LeeJon Taekwondo</title>
-
-        <meta charset="utf-8">
-        <meta name="description" content="LeeJon Taekwondo in San Jose, California. Our commitment is to our students and to the art of traditional Taekwondo. Schedule, Contact, Student Info, History.">
-        <meta name="robots" content="follow, index">
-
-        <!--link to css style-->
-        <link href="../../universalStyle.scss" type="text/css" rel="stylesheet">
-
-        <!--font links-->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:100,300,400,700" rel="stylesheet">
-
-        <!-- favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="../../photos/logofavicon.ico"/>
-
-    </head>
-
-    <body>
-
-        <div class="maintitle">
-            <h1>LeeJon Taekwondo</h1>
-            <h2>traditional martial arts in san jose</h2>
-        </div>
-
-        <div class="navandcontent">
-            <nav>
-                <ul>
-                    <li><a href="../../home/index.html">home</a></li>
-                    <li><a href="../../schedule/schedule.html">calendar + schedule</a></li>
-                    <li><a href="../../contact/contact.html">location + contact</a></li>
-                    <li><a href="../info.html">student information</a></li>
-                    <li><a href="../../history/history.html">our history</a></li>
-                </ul>
-            </nav>
-
-            <div class="content">
+	render() {
+		return (
+            <div class="color-belt-testing-info-content">
 
                 <h3>Color Belt Testing Information</h3>
 
-                <a href="../docs/testform.doc" title="testing form" class="button">Download Testing Form</a>
+                <a href={testingForm} title="testing form" class="button">Download Testing Form</a>
 
                 <p>
                     Colored-belt testing allows us to measure the student's progress towards their goals.
@@ -64,7 +33,7 @@
                     Don't forget to bring your stamp card to your test!
                 </p>
 
-                <br>
+                <br/>
 
                 <table class="typical-table" width="750" cellspacing="0" cellpadding="5">
                     <tr>
@@ -558,30 +527,8 @@
                 </table>
 
             </div>
-        
-        </div>
+		);
+	}
+}
 
-    <footer>
-
-        <section class="allfooterimages">
-            <img src="../../footerimages/cta.gif" alt="California Taekwondo Association" width="60" height="60">
-            <img src="../../footerimages/usat.gif" alt="USA Taekwondo" width="131" height="60">
-            <img src="../../footerimages/aau.gif" alt="USA Amateur Athletic Union" width="51" height="60">
-            <img src="../../footerimages/wtf.gif" alt="World Taekwondo Federation" width="131" height="60">
-        </section>
-
-        <section class="footercontact">
-            LeeJon Taekwondo
-            <br>
-            6135 Camino Verde Drive, San Jose, CA 95119
-            <br>
-            <a href="tel:408-281-5934">408-281-5934</a>
-            <br>
-            <a href="mailto:master@leejon.com">master@leejon.com</a>
-        </section>
-
-    </footer>
-
-    </body>
-
-</html>
+export default ColorBeltTestingInfo;

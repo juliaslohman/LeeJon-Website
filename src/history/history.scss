@@ -1,11 +1,15 @@
-#choibrothers {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 5px;
-}
+.history-content {
+    text-overflow: wrap;
 
-#leejoncalligraphy {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    #choibrothers {
+        float: right;
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+    
+    #leejoncalligraphy {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

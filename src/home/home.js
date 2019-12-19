@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.scss';
+import bbClass2016 from "./bbclass2016-crop.jpg";
 
 class HomePage extends React.Component {
 	constructor (props) {
@@ -20,7 +21,7 @@ class HomePage extends React.Component {
                     </p>
                 </div>
 
-                <img src="bbclass2016-crop.jpg" alt="Black belt testing 2016" className="content-block content-image" id="bb2016"/>
+                <img src={bbClass2016} alt="Black belt testing 2016" className="content-block content-image" id="bb2016"/>
 
                 <div className="content-block mission">
                     <h3>Our mission statement</h3>

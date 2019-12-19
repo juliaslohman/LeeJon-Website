@@ -9,6 +9,10 @@ import History from './history/history.js';
 import Contact from './contact/contact.js';
 import Schedule from './schedule/schedule.js';
 import Info from './info/info.js';
+import StudentCreed from './info/studentCreed/studentCreed.js';
+import BlackBeltTestingInfo from './info/testingInfo/blackBeltTestingInfo.js';
+import ColorBeltTestingInfo from './info/testingInfo/colorBeltTestingInfo.js';
+import Forms from './info/forms/forms.js';
 
 class App extends React.Component {
 	constructor(props) {
@@ -41,6 +45,18 @@ class App extends React.Component {
 							</Route>
 							<Route exact path="/history">
 								<History/>
+							</Route>
+							<Route exact path="/studentCreed">
+								<StudentCreed/>
+							</Route>
+							<Route exact path="/colorBeltTestingInfo">
+								<ColorBeltTestingInfo/>
+							</Route>
+							<Route exact path="/blackBeltTestingInfo">
+								<BlackBeltTestingInfo/>
+							</Route>
+							<Route exact path="/forms">
+								<Forms/>
 							</Route>
 						</Switch>
 					</Router>

@@ -1,4 +1,6 @@
 import React from 'react';
+import leejonCalligraphy from "./leejoncalligraphy.jpg";
+import choiBrothers from "./choibrothers.gif";
 
 class History extends React.Component {
 	constructor (props) {
@@ -32,7 +34,7 @@ class History extends React.Component {
                             <p>
                                 By the end of the Second World War the five major "Kwans" (schools) in Korea were:
                             </p>
-                            <table className="typicaltable">
+                            <table className="typical-table centered-table">
                                 <tr>
                                     <th>Chung Do Kwan</th>
                                     <th>Moo Duk Kwan</th>
@@ -83,7 +85,7 @@ class History extends React.Component {
                             </p>
 
                     <h4>History of Choi's Taekwondo</h4>
-                        <img src="choibrothers.gif" alt="Dan and Hyun Choi" width="413" height="576" className="content-image" id="choibrothers"/>
+                        <img src={choiBrothers} alt="Dan and Hyun Choi" width="413" height="576" className="content-image" id="choibrothers"/>
                         <p>
                             Choi's Taekwondo, our parent studio, has a long history and tradition.
                         </p>
@@ -118,7 +120,7 @@ class History extends React.Component {
                             Master Ortez founded LeeJon in 1990. LeeJon moved to its new location on Camino Verde Drive in 2016.
                         </p>
 
-                        <img src="../photos/leejoncalligraphy.jpg" alt="LeeJon in Korean Calligraphy" width="480" height="640" className="content-image" id="leejoncalligraphy"/>
+                        <img src={leejonCalligraphy} alt="LeeJon in Korean Calligraphy" width="480" height="640" className="content-image" id="leejoncalligraphy"/>
             </div>
 		);
 	}

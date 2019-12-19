@@ -10,42 +10,26 @@ class Schedule extends React.Component {
             <div className="schedule">
                 <h3>Calendar + Schedule</h3>
                 <section className="schedule-blocks">
-                    <table>
+                    <table className="typical-table centered-table">
                         <tr>
-                            <td id="each-schedule-block">
-                                <p id="class-name">Children</p>
-                                <p id="class-times">Tuesday &amp; Thursday 5:15-6:00 PM, Friday 5:00-5:30 PM</p>
-                            </td>
-                            <td id="each-schedule-block">
-                                <p id="class-name">Beginning Juniors</p>
-                                <p id="class-times">Monday &amp; Wednesday 5:15-6:15 PM, Friday 5:30-6:00 PM</p>
-                            </td>
-                            <td id="each-schedule-block">
-                                <p id="class-name">Intermediate Juniors 1</p>
-                                <p id="class-times">Tuesday &amp; Thursday 6:00-7:00 PM, Friday 6:00-6:30 PM</p>
-                            </td>
-                            <td id="each-schedule-block">
-                                <p id="class-name">Intermediate Juniors 2</p>
-                                <p id="class-times">Tuesday &amp; Thursday 7:00-8:00 PM, Friday 6:30-7:00 PM</p>
-                            </td>
+                            <th>Children</th>
+                            <th>Beginning Juniors</th>
+                            <th>Intermediate Juniors 1</th>
+                            <th>Intermediate Juniors 2</th>
+                            <th>Advanced Juniors</th>
+                            <th>Adults</th>
+                            <th>PowerTeam</th>
+                            <th>Poomsae Training</th>
                         </tr>
                         <tr>
-                            <td id="each-schedule-block">
-                                <p id="class-name">Advanced Juniors</p>
-                                <p id="class-times">Monday &amp; Wednesday 6:15-7:15 PM, Friday 7:00-7:45 PM</p>
-                            </td>
-                            <td id="each-schedule-block">
-                                <p id="class-name">Adults</p>
-                                <p id="class-times">Monday &amp; Wednesday 7:15-8:15 PM, Friday 7:30-8:00 PM</p>
-                            </td>
-                            <td id="each-schedule-block">
-                                <p id="class-name">PowerTeam</p>
-                                <p id="class-times">Tuesday &amp; Thursday 8:00-9:00 PM, Saturday 12:00-2:00 PM</p>
-                            </td>
-                            <td id="each-schedule-block">
-                                <p id="class-name">Poomsae Training</p>
-                                <p id="class-times">Saturday 10:00-11:30 AM</p>
-                            </td>
+                            <td>Tuesday &amp; Thursday 5:15-6:00 PM <br/> Friday 5:00-5:30 PM</td>
+                            <td>Monday &amp; Wednesday 5:15-6:15 PM <br/> Friday 5:30-6:00 PM</td>
+                            <td>Tuesday &amp; Thursday 6:00-7:00 PM <br/> Friday 6:00-6:30 PM</td>
+                            <td>Tuesday &amp; Thursday 7:00-8:00 PM <br/> Friday 6:30-7:00 PM</td>
+                            <td>Monday &amp; Wednesday 6:15-7:15 PM <br/> Friday 7:00-7:45 PM</td>
+                            <td>Monday &amp; Wednesday 7:15-8:15 PM <br/> Friday 7:30-8:00 PM</td>
+                            <td>Tuesday &amp; Thursday 8:00-9:00 PM <br/> Saturday 12:00-2:00 PM</td>
+                            <td>Saturday 10:00-11:30 AM</td>
                         </tr>
                     </table>
                 </section>
