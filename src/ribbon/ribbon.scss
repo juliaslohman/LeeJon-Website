@@ -12,13 +12,43 @@
     position: relative;
     margin: 0;
 
-    h1 {
-        font-size: 70px;
-        font-weight: 700;
+    img {
+        height: 140px;
+        position: absolute;
     }
-    
-    h2 {
-        font-size: 30px;
-        font-weight: 300;
+
+    .ribbon-text {
+        position: absolute;
+        left: 200px;
+        top: 25px;
+
+        h1 {
+            color: $red;
+            font-size: 75px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+
+    .ribbon-contact-info {
+        color: $mid-gray;
+        font-size: 18px;
+        width: 300px;
+        position: absolute;
+        top: 40px;
+        right: 90px;
+        line-height: 120%;
+
+        p {
+            margin: 10px;
+        }
+
+        a {
+            color: $mid-gray;
+        }
     }
 }
