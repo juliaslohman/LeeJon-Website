@@ -1,0 +1,32 @@
+@import '../vars.scss';
+
+.flex-container {
+    display: flex;
+    flex-direction: horizontal;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-bottom: 90px;
+
+    iframe {
+        overflow: hidden;
+        box-shadow: 2px 5px 5px $light-gray;
+    }
+
+    .contact-info-left {
+        overflow: visible;
+        text-overflow: wrap;
+        width: 35vw;
+        padding-right: 40px;
+
+        iframe {
+            width: 400px;
+            height: 250px;
+        }
+    }
+    
+    .map-window {
+        width: 50vw;
+        height: 65vh;
+        margin-top: 30px;
+    }
+}

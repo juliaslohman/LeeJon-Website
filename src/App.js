@@ -22,7 +22,7 @@ class App extends React.Component {
 
 		return (
 			<div>
-        		<Ribbon/>
+        		<Ribbon  address={ADDRESS} phone={PHONE} email={EMAIL}/>
 				<Nav/>
 				<div className="content">
 					<Router>
@@ -34,7 +34,7 @@ class App extends React.Component {
 								<Schedule/>
 							</Route>
 							<Route exact path="/contact">
-								<Contact/>
+								<Contact address={ADDRESS} phone={PHONE} email={EMAIL}/>
 							</Route>
 							<Route exact path="/info">
 								<Info/>
