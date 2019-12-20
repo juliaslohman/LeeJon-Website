@@ -13,6 +13,7 @@ import StudentCreed from './info/studentCreed/studentCreed.js';
 import BlackBeltTestingInfo from './info/testingInfo/blackBeltTestingInfo.js';
 import ColorBeltTestingInfo from './info/testingInfo/colorBeltTestingInfo.js';
 import Forms from './info/forms/forms.js';
+import TaekwondoSpirit from './info/taekwondoSpirit.js';
 
 class App extends React.Component {
 	constructor(props) {
@@ -57,6 +58,9 @@ class App extends React.Component {
 							</Route>
 							<Route exact path="/forms">
 								<Forms/>
+							</Route>
+							<Route exact path="/taekwondoSpirit">
+								<TaekwondoSpirit/>
 							</Route>
 						</Switch>
 					</Router>

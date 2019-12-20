@@ -17,7 +17,7 @@ class Info extends React.Component {
                 <a href="/forms" class="button" id="forms">Forms Videos</a>
                 <a href="docs/terminology.html" class="button">Korean Terminology</a>
                 <a href={leejonLogoMeaning} class="button">Meaning of the LeeJon Logo</a>
-                <a href="docs/Taekwondospirit.html" class="button">Taekwondo Spirit</a>
+                <a href="/taekwondoSpirit" class="button">Taekwondo Spirit</a>
             </div>
 		);
 	}
