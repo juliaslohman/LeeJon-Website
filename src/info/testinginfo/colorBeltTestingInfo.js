@@ -27,7 +27,7 @@ class ColorBeltTestingInfo extends React.Component {
                     Students must be able to demonstrate required techniques for their belt level (detalied below) to be are eligible to test.
                     They must also have attended enough class sessions.
                     All students who have earned recommendation from their Master or Head Instructor are eligible to test.
-                    The student should also submit <a href="../docs/testform.doc" title="testing form">a testing form</a> to show the approval of their teachers and parents.
+                    The student should also submit <a href={testingForm} title="download testing form">a testing form</a> to show the approval of their teachers and parents.
                 </p>
                 <p>
                     Don't forget to bring your stamp card to your test!
