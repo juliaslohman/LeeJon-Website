@@ -1,10 +1,13 @@
 .history-content {
     text-overflow: wrap;
 
-    #choibrothers {
+    p {
+        clear: none;
+    }
+
+    #choi-brothers {
         float: right;
-        margin-right: 20px;
-        margin-bottom: 5px;
+        margin: 20px 0px 10px 30px;
     }
     
     #leejoncalligraphy {
