@@ -8,6 +8,8 @@
     "url": "git+https://github.com/jsbeckwith/journey.git"
   },
   "dependencies": {
+    "@schibstedspain/sui-card-image-cover": "^1.2.0",
+    "@spectrum-web-components/card": "^0.2.1",
     "classnames": "^2.2.6",
     "history": "^4.10.1",
     "node-sass": "^4.13.0",

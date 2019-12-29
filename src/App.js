@@ -12,6 +12,7 @@ import Info from './info/info.js';
 import StudentCreed from './info/studentCreed/studentCreed.js';
 import BlackBeltTestingInfo from './info/testingInfo/blackBeltTestingInfo.js';
 import ColorBeltTestingInfo from './info/testingInfo/colorBeltTestingInfo.js';
+import Login from './info/forms/login.js';
 import Forms from './info/forms/forms.js';
 import TaekwondoSpirit from './info/taekwondoSpirit.js';
 
@@ -21,6 +22,7 @@ class App extends React.Component {
 	}
 
 	render() {
+		// CONTACT CONSTANTS
 		const ADDRESS = "6135 Camino Verde Drive, San Jose, CA 95119";
 		const PHONE = "408-281-5934";
 		const EMAIL = "master@leejon.com";
@@ -47,6 +49,9 @@ class App extends React.Component {
 							<Route exact path="/history">
 								<History/>
 							</Route>
+							<Route exact path="/login">
+								<Login email={EMAIL}/>
+							</Route>
 							<Route exact path="/studentCreed">
 								<StudentCreed/>
 							</Route>
@@ -56,11 +61,11 @@ class App extends React.Component {
 							<Route exact path="/blackBeltTestingInfo">
 								<BlackBeltTestingInfo/>
 							</Route>
-							<Route exact path="/forms">
-								<Forms/>
-							</Route>
 							<Route exact path="/taekwondoSpirit">
 								<TaekwondoSpirit/>
+							</Route>
+							<Route exact path="/forms">
+								<Forms/>
 							</Route>
 						</Switch>
 					</Router>
