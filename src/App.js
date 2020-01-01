@@ -12,13 +12,38 @@ import Info from './info/info.js';
 import StudentCreed from './info/studentCreed/studentCreed.js';
 import BlackBeltTestingInfo from './info/testingInfo/blackBeltTestingInfo.js';
 import ColorBeltTestingInfo from './info/testingInfo/colorBeltTestingInfo.js';
-import Login from './info/forms/login.js';
+import Login from './login/login.js';
 import Forms from './info/forms/forms.js';
 import TaekwondoSpirit from './info/taekwondoSpirit.js';
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
+
+		this.auth = {
+			isAuthenticated: false,
+			authenticate(cb) {
+			  this.isAuthenticated = true
+			  setTimeout(cb, 100) // fake async
+			},
+			signout(cb) {
+			  this.isAuthenticated = false
+			  setTimeout(cb, 100) // fake async
+			}
+		}
+	}
+
+	restrictProtected = (component) => {
+		if (this.auth.isAuthenticated === true) {
+			return (component);
+		} else {
+			return (
+				<Redirect to={{
+					pathname: '/login',
+					state: { from: component.props.location }
+				}}/>
+			);
+		}
 	}
 
 	render() {
@@ -44,7 +69,7 @@ class App extends React.Component {
 								<Contact address={ADDRESS} phone={PHONE} email={EMAIL}/>
 							</Route>
 							<Route exact path="/info">
-								<Info/>
+								{this.restrictProtected(<Info/>)}
 							</Route>
 							<Route exact path="/history">
 								<History/>
@@ -53,19 +78,19 @@ class App extends React.Component {
 								<Login email={EMAIL}/>
 							</Route>
 							<Route exact path="/studentCreed">
-								<StudentCreed/>
+								{this.restrictProtected(<StudentCreed/>)}
 							</Route>
 							<Route exact path="/colorBeltTestingInfo">
-								<ColorBeltTestingInfo/>
+								{this.restrictProtected(<ColorBeltTestingInfo/>)}
 							</Route>
 							<Route exact path="/blackBeltTestingInfo">
-								<BlackBeltTestingInfo/>
+								{this.restrictProtected(<BlackBeltTestingInfo/>)}
 							</Route>
 							<Route exact path="/taekwondoSpirit">
-								<TaekwondoSpirit/>
+								{this.restrictProtected(<TaekwondoSpirit/>)}
 							</Route>
 							<Route exact path="/forms">
-								<Forms/>
+								{this.restrictProtected(<Forms/>)}
 							</Route>
 						</Switch>
 					</Router>
