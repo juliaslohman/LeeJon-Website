@@ -13,16 +13,18 @@ class Login extends React.Component {
 		}
 
 		this.updateUsername = this.updateUsername.bind(this);
-		this.updatePassword = this.updateUsername.bind(this);
+		this.updatePassword = this.updatePassword.bind(this);
 		this.login = this.login.bind(this);
 	}
 
 	updateUsername = (event) => {
 		this.setState({inputUsername : event.target.value});
+		console.log("user", this.state.inputUsername);
 	}
 
 	updatePassword = (event) => {
 		this.setState({inputPassword : event.target.value});
+		console.log("password", this.state.inputPassword);
 	}
 
 	login = () => {
