@@ -19,21 +19,16 @@ class Login extends React.Component {
 
 	updateUsername = (event) => {
 		this.setState({inputUsername : event.target.value});
-		console.log("user", this.state.inputUsername);
 	}
 
 	updatePassword = (event) => {
 		this.setState({inputPassword : event.target.value});
-		console.log("password", this.state.inputPassword);
 	}
 
 	login = () => {
 		// LOGIN CREDENTIAL CONSTANTS
 		let CORRECT_USERNAME = "leejonstudent";
 		let CORRECT_PASSWORD = "leejongogogo";
-
-		console.log(this.state.inputUsername);
-		console.log(this.state.inputPassword);
 
 		let correctCredentials =
 			this.state.inputUsername === CORRECT_USERNAME && 
@@ -47,8 +42,6 @@ class Login extends React.Component {
 	}
 
 	render() {
-		// let inputUsername = document.getElementById("username").value;
-		// let inputPassword = document.getElementById("password").value;
 
 		// redirect if credentials are correct
 		// const { from } = this.props.location.state || { from: { pathname: '/info' } };
@@ -85,7 +78,7 @@ class Login extends React.Component {
 						onChange={this.updatePassword}
 					/>
 					<br/>
-					<a onClick={this.login} className="login-button button">Login</a>
+					<button type="submit" onClick={this.login} className="login-button button">Login</button>
 				</form>
             </div>
 		);

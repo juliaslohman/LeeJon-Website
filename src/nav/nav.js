@@ -1,6 +1,6 @@
 import React from 'react';
 import './nav.scss';
-import {BrowserRouter as Router, NavLink} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 class Nav extends React.Component {
 	constructor (props) {

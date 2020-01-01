@@ -37,20 +37,22 @@ class History extends React.Component {
                                     By the end of the Second World War the five major "Kwans" (schools) in Korea were:
                                 </p>
                                 <table className="typical-table centered-table">
-                                    <tr>
-                                        <th>Chung Do Kwan</th>
-                                        <th>Moo Duk Kwan</th>
-                                        <th>Chang Moo Kwan</th>
-                                        <th>Song Moo Kwan</th>
-                                        <th>Ji Do Kwan</th>
-                                    </tr>
-                                    <tr>
-                                        <td className="center">Won Kook Lee, 1945</td>
-                                        <td className="center">Hwang Kee, 1945</td>
-                                        <td className="center">In Yoon Byuna, 1946</td>
-                                        <td className="center">Byung Chik Ro, 1953</td>
-                                        <td className="center">Gae Buyng Yun, 1953</td>
-                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <th>Chung Do Kwan</th>
+                                            <th>Moo Duk Kwan</th>
+                                            <th>Chang Moo Kwan</th>
+                                            <th>Song Moo Kwan</th>
+                                            <th>Ji Do Kwan</th>
+                                        </tr>
+                                        <tr>
+                                            <td className="center">Won Kook Lee, 1945</td>
+                                            <td className="center">Hwang Kee, 1945</td>
+                                            <td className="center">In Yoon Byuna, 1946</td>
+                                            <td className="center">Byung Chik Ro, 1953</td>
+                                            <td className="center">Gae Buyng Yun, 1953</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                                 <p>
                                     Tae Kwon Do was perfected by the Korean Martial Arts movement (the above Masters) in April 1955, at which time the name Tae Kwon Do was also chosen and the first President (General Choi Hong Hi) was elected.
