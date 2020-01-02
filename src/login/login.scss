@@ -1,27 +1,44 @@
 @import '../vars.scss';
 
-.login {
-    .login-box-label {
-        font-size: 14;
-        padding-top: 15px;
-    }
+.login-content {
+    background-color: $light-gray;
+    margin: -30px -90px -20px -90px;  // undo default content padding
+    padding: 60px;
 
-    .login-box {
-        display: block;
-        font-size: 30;
-        font-family: $body-font-family;
+    .login-wrapper {
+        background-color: white;
         width: 600px;
-        height: 40px;
-        padding: 15px;
+        padding: 50px;
+        margin: auto;
+        border-radius: 15px;
         box-sizing: border-box;
-    }
+        box-shadow: 10px 10px 10px $mid-gray;
 
-    .login-box::placeholder {
-        color: $mid-gray;
-    }
+        form {
+            margin: 0 50px;
 
-    .login-button {
-        height: 60px;
+            .login-box-label {
+                font-size: 14;
+                padding-top: 15px;
+            }
+        
+            .login-box {
+                display: block;
+                font-size: 30;
+                font-family: $body-font-family;
+                width: 400px;
+                height: 40px;
+                padding: 15px;
+                box-sizing: border-box;
+            }
+        
+            .login-box::placeholder {
+                color: $mid-gray;
+            }
+        
+            .login-button {
+                height: 60px;
+            }
+        }
     }
-
 }

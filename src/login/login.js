@@ -54,34 +54,36 @@ class Login extends React.Component {
 		} else {
 			return (
 				<div className="login-content">
-					<h3>Login</h3>
-					<p>
-						Access to student information requires login.
-						To request access, email <a href={'mailto:' + this.props.email}>{this.props.email}</a>.
-					</p>
-					<form>
-						<div className="login-box-label">Username</div>
-						<input
-							autoFocus
-							type="text"
-							name="username"
-							placeholder="username"
-							className="login-box"
-							id="username"
-							onChange={this.updateUsername}
-						/>
-						<div className="login-box-label">Password</div>
-						<input
-							type="text"
-							name="password"
-							placeholder="password"
-							className="login-box"
-							id="password"
-							onChange={this.updatePassword}
-						/>
-						<br/>
-						<button type="submit" onClick={this.login} className="login-button button">Login</button>
-					</form>
+					<div className="login-wrapper">
+						<h3>Login</h3>
+						<p>
+							Access to student information requires login.
+							To request access, email <a href={'mailto:' + this.props.email}>{this.props.email}</a>.
+						</p>
+						<form>
+							<div className="login-box-label">Username</div>
+							<input
+								autoFocus
+								type="text"
+								name="username"
+								placeholder="username"
+								className="login-box"
+								id="username"
+								onChange={this.updateUsername}
+							/>
+							<div className="login-box-label">Password</div>
+							<input
+								type="text"
+								name="password"
+								placeholder="password"
+								className="login-box"
+								id="password"
+								onChange={this.updatePassword}
+							/>
+							<br/>
+							<button type="submit" onClick={this.login} className="login-button button">Login</button>
+						</form>
+					</div>
 				</div>
 			);
 		}
