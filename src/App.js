@@ -20,30 +20,29 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.auth = {
-			isAuthenticated: false,
-			authenticate(cb) {
-			  this.isAuthenticated = true
-			  setTimeout(cb, 100) // fake async
-			},
-			signout(cb) {
-			  this.isAuthenticated = false
-			  setTimeout(cb, 100) // fake async
-			}
+		this.state = {
+			isAuthenticated: false
 		}
+
+		this.restrictProtected = this.restrictProtected.bind(this);
+		this.authenticate = this.authenticate.bind(this);
 	}
 
+	// redirects if not logged in
 	restrictProtected = (component) => {
-		if (this.auth.isAuthenticated === true) {
+		if (this.state.isAuthenticated === true) {
 			return (component);
 		} else {
 			return (
 				<Redirect to={{
-					pathname: '/login',
-					state: { from: component.props.location }
+					pathname: '/login'
 				}}/>
 			);
 		}
+	}
+
+	authenticate() {
+		this.setState({isAuthenticated: true});
 	}
 
 	render() {
@@ -51,6 +50,8 @@ class App extends React.Component {
 		const ADDRESS = "6135 Camino Verde Drive, San Jose, CA 95119";
 		const PHONE = "408-281-5934";
 		const EMAIL = "master@leejon.com";
+
+		console.log("isAuthenticated:", this.state.isAuthenticated);
 
 		return (
 			<div>
@@ -75,7 +76,7 @@ class App extends React.Component {
 								<History/>
 							</Route>
 							<Route exact path="/login">
-								<Login email={EMAIL}/>
+								<Login email={EMAIL} authenticate={this.authenticate}/>
 							</Route>
 							<Route exact path="/studentCreed">
 								{this.restrictProtected(<StudentCreed/>)}

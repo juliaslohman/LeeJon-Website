@@ -11,14 +11,14 @@ class Info extends React.Component {
 		return (
             <div className="info-content">
                 <h3>Student Information</h3>
-                <a href="/studentCreed" class="button">Student Creed</a>
-                <a href="/colorBeltTestingInfo" class="button">Testing Information for Color Belts</a>
-                <a href="/blackBeltTestingInfo" class="button">Testing Information for Black Belts</a>
-                <a href="/history" class="button">History of Taekwondo, Choi's, and LeeJon</a>
-                <a href="/login" class="button" id="forms">Forms Videos</a>
-                <a href={koreanTerminology} class="button">Korean Terminology</a>
-                <a href={leejonLogoMeaning} class="button">Meaning of the LeeJon Logo</a>
-                <a href="/taekwondoSpirit" class="button">Taekwondo Spirit</a>
+                <a href="/studentCreed" className="button">Student Creed</a>
+                <a href="/colorBeltTestingInfo" className="button">Testing Information for Color Belts</a>
+                <a href="/blackBeltTestingInfo" className="button">Testing Information for Black Belts</a>
+                <a href="/history" className="button">History of Taekwondo, Choi's, and LeeJon</a>
+                <a href="/login" className="button" id="forms">Forms Videos</a>
+                <a href={koreanTerminology} className="button">Korean Terminology</a>
+                <a href={leejonLogoMeaning} className="button">Meaning of the LeeJon Logo</a>
+                <a href="/taekwondoSpirit" className="button">Taekwondo Spirit</a>
             </div>
 		);
 	}
