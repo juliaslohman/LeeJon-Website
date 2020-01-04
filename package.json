@@ -17,6 +17,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-facebook": "^8.1.4",
+    "react-fade-in": "^0.1.7",
     "react-history": "^0.18.2",
     "react-native-card-ui": "^1.1.1",
     "react-native-size-matters": "^0.3.0",
