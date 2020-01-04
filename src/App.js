@@ -21,11 +21,12 @@ class App extends React.Component {
 		super(props);
 
 		this.state = {
-			isAuthenticated: false
+			isAuthenticated: this.updateAuthentication()
 		}
 
 		this.restrictProtected = this.restrictProtected.bind(this);
 		this.authenticate = this.authenticate.bind(this);
+		this.updateAuthentication = this.updateAuthentication.bind(this);
 	}
 
 	// redirects if not logged in
@@ -41,8 +42,20 @@ class App extends React.Component {
 		}
 	}
 
-	authenticate() {
+	// called by login when correct credentials entered
+	authenticate = () => {
 		this.setState({isAuthenticated: true});
+		sessionStorage.setItem('isAuthenticated', 'true');
+	}
+
+	updateAuthentication = () => {
+		// checks session storage for past login
+		let hasBeenAuthenticated = JSON.parse(sessionStorage.getItem('isAuthenticated'));
+		if (hasBeenAuthenticated) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	render() {
@@ -50,8 +63,6 @@ class App extends React.Component {
 		const ADDRESS = "6135 Camino Verde Drive, San Jose, CA 95119";
 		const PHONE = "408-281-5934";
 		const EMAIL = "master@leejon.com";
-
-		console.log("isAuthenticated:", this.state.isAuthenticated);
 
 		return (
 			<div>
