@@ -9,6 +9,7 @@ import HomePage from './home/home.js';
 import History from './history/history.js';
 import Contact from './contact/contact.js';
 import Schedule from './schedule/schedule.js';
+import Gallery from './gallery/gallery.js';
 import Info from './info/info.js';
 import StudentCreed from './info/studentCreed/studentCreed.js';
 import BlackBeltTestingInfo from './info/testingInfo/blackBeltTestingInfo.js';
@@ -85,6 +86,9 @@ class App extends React.Component {
 									</Route>
 									<Route exact path="/info">
 										{this.restrictProtected(<Info/>)}
+									</Route>
+									<Route exact path="/gallery">
+										<Gallery/>
 									</Route>
 									<Route exact path="/history">
 										<History/>
