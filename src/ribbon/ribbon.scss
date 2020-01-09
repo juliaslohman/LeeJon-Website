@@ -26,11 +26,13 @@
 
         h1 {
             color: $red;
-            font-size: 75px;
+            font-family: $logo-font;
+            font-size: 85px;
             font-weight: 700;
         }
         
         h2 {
+            color: $mid-gray;
             font-size: 30px;
             font-weight: 300;
         }

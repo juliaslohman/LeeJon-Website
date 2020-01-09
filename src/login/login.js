@@ -27,8 +27,8 @@ class Login extends React.Component {
 
 	login = () => {
 		// LOGIN CREDENTIAL CONSTANTS
-		let CORRECT_USERNAME = "leejonstudent";
-		let CORRECT_PASSWORD = "leejongogogo";
+		let CORRECT_USERNAME = "Leejontkd";
+		let CORRECT_PASSWORD = "powerteam";
 
 		let correctCredentials =
 			this.state.inputUsername === CORRECT_USERNAME && 

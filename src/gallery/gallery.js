@@ -70,7 +70,7 @@ class Gallery extends React.Component {
                 <ImageGallery
                     items={images}
                     lazyLoad
-                    showThumbnails="false"
+                    showThumbnails={false}
                     className="gallery-carousel"
                 />
             </div>

@@ -43,7 +43,7 @@ class Ribbon extends React.Component {
 				<img src={ribbonLogo} alt="LeeJon Crest Logo"/>
 				<div className="ribbon-text">
 					<a href="/">
-						<h1>LeeJon Taekwondo</h1>
+						<h1>LEEJON TAEKWONDO</h1>
 					</a>
 					<h2>traditional martial arts in san jose</h2>
 				</div>
