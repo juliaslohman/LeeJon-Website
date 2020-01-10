@@ -1,5 +1,8 @@
 @import '../vars.scss';
 
+$dark-gray-90: rgba(56, 51, 51, 0.9);
+$dark-gray-10: rgba(56, 51, 51, 0.1);
+
 .homepage-content {
     width: 100vw;
     margin: 0px -80px;
@@ -8,7 +11,7 @@
 
     .content-block {
         box-sizing: border-box;
-        height: 500px;
+        height: auto;
         display: block;
         position: relative;
         margin-left: -10px;
@@ -26,9 +29,28 @@
         margin: auto;
     }
 
+    .homepage-bg-image {
+        width: 100vw;
+        min-width: 600px;
+        height: 100%;
+        margin: 0;
+        z-index: -1;
+        box-sizing: default;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 98%;
+        z-index: 0;
+    }
+
     .welcome {
         padding: 40px;
-        height: auto;
     }
 
     #bb2016 {
@@ -53,18 +75,58 @@
     }
 
     .learn {
-    
+
+        .overlay {
+            background: linear-gradient(to right, $dark-gray-10, 40%, $dark-gray-90);  // transparency gradient
+        }
+
+        .block-textwrap {
+            color: white;
+            width: 700px;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+            right: 3%;
+            top: 60%;
+            transform: translateY(-50%);
+            vertical-align: middle;
+
+            h3 {
+                color: white;
+            }
+        }
     }
     
     .instructors {
-        background-color: $light-gray
+        height: 400px;
     }
     
     .ranks {
-    
+        margin-bottom: -10px;
+        
+        .overlay {
+            background: linear-gradient(to right, $dark-gray-90, 60%, $dark-gray-10);  // transparency gradient
+        }
+
+        .block-textwrap {
+            color: white;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+            left: 6%;
+            top: 60%;
+            transform: translateY(-50%);
+            vertical-align: middle;
+
+            h3 {
+                color: white;
+            }
+        }
     }
     
     .classofferings {
-        background-color: $light-gray
+        background-color: $light-gray;
+        margin-bottom: -20px;  // negate body padding
+        padding: 70px;
     }
 }

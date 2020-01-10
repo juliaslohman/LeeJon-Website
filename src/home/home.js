@@ -1,6 +1,8 @@
 import React from 'react';
 import './home.scss';
-import bbClass2016 from "./bbclass2016-crop.jpg";
+import bbClass2016 from "./homepageImages/bbclass2016-crop.jpg";
+import learnImage from "./homepageImages/forms2015-2.JPG";
+import ranksImage from "./homepageImages/profiles.JPG";
 
 class HomePage extends React.Component {
 	constructor (props) {
@@ -33,6 +35,8 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="content-block learn">
+                    <img src={learnImage} className="content-image homepage-bg-image learn-image"/>
+                    <div className="overlay"/>
                     <div className="block-textwrap">
                         <h3>Learn traditional Korean martial arts</h3>
                         <p>
@@ -53,6 +57,8 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="content-block ranks">
+                    <img src={ranksImage} className="content-image homepage-bg-image ranks-image"/>
+                    <div className="overlay"/>
                     <div className="block-textwrap">
                         <h3>Rise through the ranks</h3>
                         <p>
@@ -63,13 +69,12 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="content-block classofferings">
-                    <div className="block-textwrap">
-                        <h3>Classes for all ages and skill levels</h3>
-                        <p>
-                            We offer separate classes for all age groups and belt ranks, for young children to adults.
-                            See our <a href="/schedule">schedule and calendar page</a> for more details.
-                        </p>
-                    </div>
+                    <h3>Classes for all ages and skill levels</h3>
+                    <p>
+                        We offer separate classes for all age groups and belt ranks, from young children to adults.
+                        See our <a href="/schedule">schedule and calendar page</a> for more details, 
+                        or visit our <a href="/contact">contact page</a> if you'd like to ask any questions.
+                    </p>
                 </div>
 
             </div>
