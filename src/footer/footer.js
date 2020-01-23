@@ -31,6 +31,8 @@ class Footer extends React.Component {
                     <a href={'mailto:' + this.props.email}>{this.props.email}</a>
                 </div>
 
+                Site built by <a href="https://github.com/juliaslohman">Julia Lohman</a>
+
             </footer>
 		);
 	}

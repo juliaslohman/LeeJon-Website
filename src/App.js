@@ -68,55 +68,53 @@ class App extends React.Component {
 
 		return (
 			<div>
-				<FadeIn>
-					<Ribbon  address={ADDRESS} phone={PHONE} email={EMAIL}/>
-					<Nav/>
-					<div className="content">
-						<FadeIn>
-							<Router>
-								<Switch>
-									<Route exact path="/">
-										<HomePage/>
-									</Route>
-									<Route exact path="/schedule">
-										<Schedule/>
-									</Route>
-									<Route exact path="/contact">
-										<Contact address={ADDRESS} phone={PHONE} email={EMAIL}/>
-									</Route>
-									<Route exact path="/info">
-										{this.restrictProtected(<Info/>)}
-									</Route>
-									<Route exact path="/gallery">
-										<Gallery/>
-									</Route>
-									<Route exact path="/history">
-										<History/>
-									</Route>
-									<Route exact path="/login">
-										<Login email={EMAIL} authenticate={this.authenticate}/>
-									</Route>
-									<Route exact path="/studentCreed">
-										{this.restrictProtected(<StudentCreed/>)}
-									</Route>
-									<Route exact path="/colorBeltTestingInfo">
-										{this.restrictProtected(<ColorBeltTestingInfo/>)}
-									</Route>
-									<Route exact path="/blackBeltTestingInfo">
-										{this.restrictProtected(<BlackBeltTestingInfo/>)}
-									</Route>
-									<Route exact path="/taekwondoSpirit">
-										{this.restrictProtected(<TaekwondoSpirit/>)}
-									</Route>
-									<Route exact path="/forms">
-										{this.restrictProtected(<Forms/>)}
-									</Route>
-								</Switch>
-							</Router>
-						</FadeIn>
-					</div>
-					<Footer address={ADDRESS} phone={PHONE} email={EMAIL}/>
-				</FadeIn>
+				<Ribbon  address={ADDRESS} phone={PHONE} email={EMAIL}/>
+				<Nav/>
+				<div className="content">
+					<FadeIn>
+						<Router>
+							<Switch>
+								<Route exact path="/">
+									<HomePage/>
+								</Route>
+								<Route exact path="/schedule">
+									<Schedule/>
+								</Route>
+								<Route exact path="/contact">
+									<Contact address={ADDRESS} phone={PHONE} email={EMAIL}/>
+								</Route>
+								<Route exact path="/info">
+									{this.restrictProtected(<Info/>)}
+								</Route>
+								<Route exact path="/gallery">
+									<Gallery/>
+								</Route>
+								<Route exact path="/history">
+									<History/>
+								</Route>
+								<Route exact path="/login">
+									<Login email={EMAIL} authenticate={this.authenticate}/>
+								</Route>
+								<Route exact path="/studentCreed">
+									{this.restrictProtected(<StudentCreed/>)}
+								</Route>
+								<Route exact path="/colorBeltTestingInfo">
+									{this.restrictProtected(<ColorBeltTestingInfo/>)}
+								</Route>
+								<Route exact path="/blackBeltTestingInfo">
+									{this.restrictProtected(<BlackBeltTestingInfo/>)}
+								</Route>
+								<Route exact path="/taekwondoSpirit">
+									{this.restrictProtected(<TaekwondoSpirit/>)}
+								</Route>
+								<Route exact path="/forms">
+									{this.restrictProtected(<Forms/>)}
+								</Route>
+							</Switch>
+						</Router>
+					</FadeIn>
+				</div>
+				<Footer address={ADDRESS} phone={PHONE} email={EMAIL}/>
 			</div>
 		);
 	}
