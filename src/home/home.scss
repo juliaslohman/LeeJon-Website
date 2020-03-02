@@ -97,7 +97,8 @@ $dark-gray-10: rgba(56, 51, 51, 0.1);
     }
     
     .instructors {
-        height: 400px;
+        margin-bottom: -20px;  // negate body padding
+        padding: 70px;
     }
     
     .ranks {

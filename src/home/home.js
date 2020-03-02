@@ -47,13 +47,10 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="content-block instructors">
-                    <div className="block-textwrap">
-                        <h3>World-class instructors</h3>
-                        <p>
-                            All LeeJon Taekwondo instructors are WTF-certified, headed by founder Leonard Ortez, who is a 9th-degree black belt with 40 years of teaching experience.
-                        </p>
-                    </div>
-                    {/*<img src="../photos/instructor-edited.jpg" alt="Children's class" className="content-image" id="instructorimage" height="400"/>*/}
+                    <h3>World-class instructors</h3>
+                    <p>
+                        All LeeJon Taekwondo instructors are WTF-certified, headed by founder Leonard Ortez, who is a 9th-degree black belt with 40 years of teaching experience.
+                    </p>
                 </div>
 
                 <div className="content-block ranks">

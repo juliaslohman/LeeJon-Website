@@ -63,7 +63,7 @@ class App extends React.Component {
 	render() {
 		// CONTACT CONSTANTS
 		const ADDRESS = "6135 Camino Verde Drive, San Jose, CA 95119";
-		const PHONE = "408-281-5934";
+		const PHONE = "408-529-2712";
 		const EMAIL = "master@leejon.com";
 
 		return (
