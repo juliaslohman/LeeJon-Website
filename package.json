@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/jsbeckwith/journey.git"
   },
+  "homepage": "leejon.com",
   "dependencies": {
     "@manufosela/element-card": "^2.3.5",
     "@schibstedspain/sui-card-image-cover": "^1.2.0",

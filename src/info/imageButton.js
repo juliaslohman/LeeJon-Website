@@ -11,7 +11,7 @@ class ImageButton extends React.Component {
             <div className="image-button">
                 <a href={this.props.path}>
                     <div className="button-img">
-                        <img src={this.props.image}/>
+                        <img src={this.props.image} alt={this.props.text}/>
                     </div>
                     <div className="image-button-text">
                         <p>{this.props.text}</p>

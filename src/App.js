@@ -5,6 +5,7 @@ import './universalStyle.scss';
 import Ribbon from './ribbon/ribbon.js';
 import Nav from './nav/nav.js';
 import Footer from './footer/footer.js';
+import ScrollToTop from './scrollToTop.js';
 import HomePage from './home/home.js';
 import History from './history/history.js';
 import Contact from './contact/contact.js';
@@ -73,44 +74,46 @@ class App extends React.Component {
 				<div className="content">
 					<FadeIn>
 						<Router>
-							<Switch>
-								<Route exact path="/">
-									<HomePage/>
-								</Route>
-								<Route exact path="/schedule">
-									<Schedule/>
-								</Route>
-								<Route exact path="/contact">
-									<Contact address={ADDRESS} phone={PHONE} email={EMAIL}/>
-								</Route>
-								<Route exact path="/info">
-									{this.restrictProtected(<Info/>)}
-								</Route>
-								<Route exact path="/gallery">
-									<Gallery/>
-								</Route>
-								<Route exact path="/history">
-									<History/>
-								</Route>
-								<Route exact path="/login">
-									<Login email={EMAIL} authenticate={this.authenticate}/>
-								</Route>
-								<Route exact path="/studentCreed">
-									{this.restrictProtected(<StudentCreed/>)}
-								</Route>
-								<Route exact path="/colorBeltTestingInfo">
-									{this.restrictProtected(<ColorBeltTestingInfo/>)}
-								</Route>
-								<Route exact path="/blackBeltTestingInfo">
-									{this.restrictProtected(<BlackBeltTestingInfo/>)}
-								</Route>
-								<Route exact path="/taekwondoSpirit">
-									{this.restrictProtected(<TaekwondoSpirit/>)}
-								</Route>
-								<Route exact path="/forms">
-									{this.restrictProtected(<Forms/>)}
-								</Route>
-							</Switch>
+							<ScrollToTop>
+								<Switch>
+									<Route exact path="/">
+										<HomePage/>
+									</Route>
+									<Route exact path="/schedule">
+										<Schedule/>
+									</Route>
+									<Route exact path="/contact">
+										<Contact address={ADDRESS} phone={PHONE} email={EMAIL}/>
+									</Route>
+									<Route exact path="/info">
+										{this.restrictProtected(<Info/>)}
+									</Route>
+									<Route exact path="/gallery">
+										<Gallery/>
+									</Route>
+									<Route exact path="/history">
+										<History/>
+									</Route>
+									<Route exact path="/login">
+										<Login email={EMAIL} authenticate={this.authenticate}/>
+									</Route>
+									<Route exact path="/studentCreed">
+										{this.restrictProtected(<StudentCreed/>)}
+									</Route>
+									<Route exact path="/colorBeltTestingInfo">
+										{this.restrictProtected(<ColorBeltTestingInfo/>)}
+									</Route>
+									<Route exact path="/blackBeltTestingInfo">
+										{this.restrictProtected(<BlackBeltTestingInfo/>)}
+									</Route>
+									<Route exact path="/taekwondoSpirit">
+										{this.restrictProtected(<TaekwondoSpirit/>)}
+									</Route>
+									<Route exact path="/forms">
+										{this.restrictProtected(<Forms/>)}
+									</Route>
+								</Switch>
+							</ScrollToTop>
 						</Router>
 					</FadeIn>
 				</div>

@@ -35,7 +35,7 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="content-block learn">
-                    <img src={learnImage} className="content-image homepage-bg-image learn-image"/>
+                    <img src={learnImage} alt="learn traditional Korean martial arts" className="content-image homepage-bg-image learn-image"/>
                     <div className="overlay"/>
                     <div className="block-textwrap">
                         <h3>Learn traditional Korean martial arts</h3>
@@ -54,7 +54,7 @@ class HomePage extends React.Component {
                 </div>
 
                 <div className="content-block ranks">
-                    <img src={ranksImage} className="content-image homepage-bg-image ranks-image"/>
+                    <img src={ranksImage} alt="Rise through the ranks" className="content-image homepage-bg-image ranks-image"/>
                     <div className="overlay"/>
                     <div className="block-textwrap">
                         <h3>Rise through the ranks</h3>
